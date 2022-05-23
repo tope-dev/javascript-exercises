@@ -2,7 +2,8 @@ const fibonacci = function(index) {
   let array = [1,1];
   let number = 0;
   index = parseInt(index);
-  if (index <= 0) return "OOPS";
+  if (index < 0) return "OOPS";
+  if (index === 0 ) return 0;
   for (i=1; i <= index; i++) {
     number = array[i-1] + array[i];
     array.push(number);
